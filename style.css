@@ -1,0 +1,330 @@
+/* styles.css */
+  
+:root {
+    --color-primary1: #eff8fc;
+    --color-primary2: #0C1E28;
+    --color-secondary1: #FFD700;
+    --color-secondary2: #FF6347;
+
+
+}
+
+body {
+    font-family: "Staatliches", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    background-color:var(--color-primary1);
+}
+
+header {
+    padding: 10px 0;
+    top: 20px;
+    margin-bottom: 100px;
+}
+
+header .logoimage{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+header .logoimage img{
+    width: 165px;
+    height: 52px;
+}
+
+header nav{
+    position: relative;
+    top: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #455A66;
+    text-decoration: none;
+    font-size: 0.9.5em ;
+    font-family: Arial,  sans-serif;
+
+}
+
+/* Add this CSS for the underline effect with transition and space */
+nav ul li a.active {
+    position: relative; /* Ensure relative positioning for absolute positioning of ::after */
+    text-decoration: none; /* Remove default underline */
+}
+
+nav ul li a.active::after {
+    content: '';
+    position: absolute;
+    bottom: -20px; /* Adjust as needed for spacing */
+    left: -15px;
+    
+    width: 75px;
+    height: 4px; /* Thickness of the underline */
+    background-color:black; /* Color of the underline */
+     /* Transition effect */
+}
+
+
+
+
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+    margin: 20px 0;
+    color:var(--color-primary2);
+    font-size: 2em;
+}
+
+p {
+    text-align: center;
+    margin: 10px 0;
+    color:  #455A66;
+    font-size: 1.3em;
+}
+
+.splitpart{
+    width: 100%;
+    height: 600px;
+    background-color: red;
+    display: flex;
+}
+
+.splitpart .leftpart{
+    width: 50%;height: 100%;
+}
+
+.splitpart .leftpart img{
+    width: 100%;
+    height: 100%;
+}
+
+.splitpart .rightpart{
+    width: 50%;
+    height: 100;
+    background-color: var(--color-primary2);
+    
+    font-family: Arial, sans-serif;
+}
+
+.splitpart .rightpart h1{
+    color: white;
+    text-align: center;
+    font-size: 4.5em;
+    font-weight: bold;
+    margin-top: 120px;
+    
+}
+
+.splitpart .rightpart a button {
+    width: 216px;
+    height: 72px;
+    font-size: 1.3em;
+    margin-left: 240px;
+    cursor: pointer;
+}
+
+section {
+    padding: 50px 0;
+}
+
+.value-propositions, .how-it-works, .cta {
+    margin: 30px 0;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.value-propositions ul {
+    list-style: none;
+    padding: 0;
+}
+
+.value-propositions ul li{
+    font-size: 1.3em;
+}
+
+.value-propositions ul li span{
+    color:  #455A66;
+}
+
+.value-propositions li {
+    margin: 10px 0;
+    background: var(--color-primary1);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.how-it-works p{
+    color:var(--color-primary2);
+    font-size: 1.3em;
+}
+
+.how-it-works p span {
+    color: #455A66;
+}
+
+
+
+.cta p {
+    font-size: 1.3em;
+}
+
+.cta form {
+    margin-top: 70px;
+}
+
+.cta input[type="email"] {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    height: 40px;
+    font-size: 1em;
+}
+
+.cta button {
+    padding: 10px 20px;
+    background: var(--color-primary2);
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+    height: 60px;
+    font-size: 1.5em;
+}
+
+
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.contact-form input, .contact-form textarea {
+    width:100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form input{
+    height: 20px;
+}
+
+.contact-form textarea{
+    height: 60px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background:var(--color-primary2);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 102%;
+    margin-top: 15px;
+    height: 45px;
+}
+
+
+
+/* .social-media {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.social-media a {
+    margin: 0 10px;
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #0056b3;
+} */
+
+footer {
+    font-family: "Staatliches", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    background-color:var(--color-primary1);
+}
+
+footer .logoimage{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+footer .logoimage img{
+    width: 165px;
+    height: 52px;
+}
+
+footer .icons {
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+footer .icons a{
+    color: black;
+}
+
+footer .icons .fa-brands{
+    margin-right: 20px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    font-size: 1.6em;
+}
+
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .cta form, .contact-form input, .contact-form textarea {
+        width: 90%;
+    }
+
+    .cta input[type="email"], .contact-form input, .contact-form textarea {
+        width: 100%;
+    }
+}
